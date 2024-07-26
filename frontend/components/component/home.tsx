@@ -27,12 +27,12 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <main className="container mx-auto grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 lg:grid-cols-3 ">
+    <main className="container mx-auto grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 lg:grid-cols-3">
       <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
         <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
           <span className="sr-only">View</span>
         </Link>
-        <img src="/bijli.png" alt="Feature 1" width={200} height={200} className="h-50 w-50 object-cover" />
+        <img src="/bijli.png" alt="Feature 1" width={100} height={100} className="h-64 w-full object-cover" />
         <div className="bg-background p-4">
           <h3 className="text-lg font-semibold">Electricity Department</h3>
         </div>
