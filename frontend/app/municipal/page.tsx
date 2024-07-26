@@ -13,21 +13,7 @@ export default function MunicipalHome() {
           <BuildingIcon className="h-6 w-6" />
           <span className="text-lg font-semibold">Municipal Corporation</span>
         </Link>
-        <div className="ml-auto flex items-center gap-4">
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="rounded-full">
-                <img src="/placeholder.svg" width={36} height={36} alt="Avatar" className="rounded-full" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuLabel>John Doe</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>Settings</DropdownMenuItem>
-              <DropdownMenuItem>Logout</DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
+        
       </header>
       <div className="flex flex-1">
         <aside className="border-r bg-background px-4 py-6 sm:px-6">

@@ -1,9 +1,9 @@
 import React from 'react'
-import Home from '@/components/component/home'
+import Campaign  from '@/components/component/campaign'
 const page = () => {
   return (
     <div>
-      <Home/>
+        <Campaign/>
     </div>
   )
 }

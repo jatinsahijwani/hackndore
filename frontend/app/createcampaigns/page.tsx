@@ -1,9 +1,9 @@
 import React from 'react'
-import Home from '@/components/component/home'
+import  Createcamp  from '@/components/component/createcamp'
 const page = () => {
   return (
     <div>
-      <Home/>
+        <Createcamp/>
     </div>
   )
 }
