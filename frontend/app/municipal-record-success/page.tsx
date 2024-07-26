@@ -1,10 +1,10 @@
-import Login from '@/components/component/login'
+import { Success } from '@/components/success'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-     <Login/>
+      <Success />
     </div>
   )
 }

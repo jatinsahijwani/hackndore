@@ -51,6 +51,10 @@ app.post('/api/getComplaintsByCategory', async(req,res) => {
     return res.json(data);
 });
 
+app.post('/get-media',async(req,res) => {
+    
+})
+
 app.listen(port,() => {
     console.log("Listening at port number : " + port);
 })
