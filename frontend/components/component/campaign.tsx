@@ -29,16 +29,16 @@ import { Badge } from "@/components/ui/badge"
 
 export default function Campaign() {
   return (
-    <div className="flex min-h-screen w-full flex-col bg-muted/40">
-      <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 border-b bg-background">
-        <h1 className="text-2xl font-bold">Community Campaigns</h1>
+    <div className="flex min-h-screen w-full flex-col bg-muted/40 ">
+      <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 border-b  bg-[#001D4A]">
+        <h1 className="text-2xl font-bold text-white">Community Campaigns</h1>
       </header>
       <div className="flex flex-1">
         <aside className="hidden w-64 flex-col border-r bg-background p-6 sm:flex">
-          <nav className="flex flex-col gap-4">
+          <nav className="flex flex-col gap-4 ">
             <Link
               href="/createcampaigns"
-              className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              className="inline-flex h-10 items-center bg-[#001D4A] text-white hover:bg-[#045CC8] justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
               prefetch={false}
             >
               Create Campaign
@@ -55,12 +55,12 @@ export default function Campaign() {
         </aside>
         <main className="flex-1 p-6">
           <div className="grid gap-6">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between ">
               <h2 className="text-xl font-bold">Existing Campaigns</h2>
               
             </div>
             <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-              <Card>
+              <Card className="bg-gray-300">
                 <CardHeader>
                   <CardTitle>Smart Streetlights</CardTitle>
                   <CardDescription>Campaign to install energy-efficient LED streetlights in the city.</CardDescription>
@@ -70,7 +70,7 @@ export default function Campaign() {
                     <Badge variant="outline">Active</Badge>
                     <Link
                       href="#"
-                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                     >
                       View
@@ -78,7 +78,7 @@ export default function Campaign() {
                   </div>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="bg-gray-300" >
                 <CardHeader>
                   <CardTitle>Bike Share Program</CardTitle>
                   <CardDescription>
@@ -90,7 +90,7 @@ export default function Campaign() {
                     <Badge variant="secondary">Draft</Badge>
                     <Link
                       href="#"
-                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                     >
                       View
@@ -98,7 +98,7 @@ export default function Campaign() {
                   </div>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="bg-gray-300">
                 <CardHeader>
                   <CardTitle>Smart Waste Management</CardTitle>
                   <CardDescription>Campaign to implement a smart waste management system in the city.</CardDescription>
@@ -108,7 +108,7 @@ export default function Campaign() {
                     <Badge variant="outline">Active</Badge>
                     <Link
                       href="#"
-                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                     >
                       View
@@ -116,7 +116,7 @@ export default function Campaign() {
                   </div>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="bg-gray-300">
                 <CardHeader>
                   <CardTitle>Smart Parking</CardTitle>
                   <CardDescription>Campaign to implement a smart parking system in the city.</CardDescription>
@@ -126,7 +126,7 @@ export default function Campaign() {
                     <Badge variant="outline">Active</Badge>
                     <Link
                       href="#"
-                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                     >
                       View
@@ -134,7 +134,7 @@ export default function Campaign() {
                   </div>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="bg-gray-300">
                 <CardHeader>
                   <CardTitle>Urban Greening</CardTitle>
                   <CardDescription>Campaign to plant more trees and create green spaces in the city.</CardDescription>
@@ -144,7 +144,7 @@ export default function Campaign() {
                     <Badge variant="outline">Active</Badge>
                     <Link
                       href="#"
-                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                     >
                       View
@@ -152,7 +152,7 @@ export default function Campaign() {
                   </div>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="bg-gray-300">
                 <CardHeader>
                   <CardTitle>Renewable Energy</CardTitle>
                   <CardDescription>
@@ -164,7 +164,7 @@ export default function Campaign() {
                     <Badge variant="secondary">Draft</Badge>
                     <Link
                       href="#"
-                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                     >
                       View
@@ -172,7 +172,7 @@ export default function Campaign() {
                   </div>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="bg-gray-300">
                 <CardHeader>
                   <CardTitle>Public Transit Expansion</CardTitle>
                   <CardDescription>Campaign to expand the city's public transportation network.</CardDescription>
@@ -182,7 +182,7 @@ export default function Campaign() {
                     <Badge variant="outline">Active</Badge>
                     <Link
                       href="#"
-                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                     >
                       View
@@ -190,7 +190,7 @@ export default function Campaign() {
                   </div>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="bg-gray-300">
                 <CardHeader>
                   <CardTitle>Sustainable Water Management</CardTitle>
                   <CardDescription>
@@ -202,7 +202,7 @@ export default function Campaign() {
                     <Badge variant="outline">Active</Badge>
                     <Link
                       href="#"
-                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                      className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                     >
                       View
