@@ -5,22 +5,23 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from "@/components/ui/table"
 import { ChartTooltipContent, ChartTooltip, ChartContainer } from "@/components/ui/chart"
 
+
 export default function MunicipalHome() {
   return (
     <div className="flex min-h-screen w-full flex-col bg-muted/40">
-      <header className="flex h-14 items-center gap-4 border-b bg-background px-4 sm:px-6">
+      <header className="flex h-14 items-center gap-4 border-b bg-white px-4 sm:px-6">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
-          <BuildingIcon className="h-6 w-6" />
-          <span className="text-lg font-semibold">Municipal Corporation</span>
+          <img src="/MUNICIPAL.png" alt="logo" height={140} width={140} />
+          <span className="text-lg font-semibold"> Indore Municipal Corporation</span>
         </Link>
         
       </header>
       <div className="flex flex-1">
-        <aside className="border-r bg-background px-4 py-6 sm:px-6">
-          <nav className="grid gap-4">
+        <aside className="border-r bg-[#001D4A] px-4 py-6 sm:px-6">
+          <nav className="grid gap-4 text-white">
             <Link
               href="#"
-              className="flex items-center gap-2 rounded-md bg-primary px-3 py-2 text-primary-foreground"
+              className="flex items-center hover:bg-[#045CC8] gap-2 rounded-md bg-primary px-3 py-2 text-primary-foreground"
               prefetch={false}
             >
               <LayoutGridIcon className="h-5 w-5" />
@@ -28,7 +29,7 @@ export default function MunicipalHome() {
             </Link>
             <Link
               href="#"
-              className="flex items-center gap-2 rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground"
+              className="flex items-center hover:bg-[#045CC8] gap-2 rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground"
               prefetch={false}
             >
               <PackageIcon className="h-5 w-5" />
@@ -36,7 +37,7 @@ export default function MunicipalHome() {
             </Link>
             <Link
               href="#"
-              className="flex items-center gap-2 rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground"
+              className="flex items-center hover:bg-[#045CC8] gap-2 rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground"
               prefetch={false}
             >
               <WrenchIcon className="h-5 w-5" />
@@ -44,7 +45,7 @@ export default function MunicipalHome() {
             </Link>
             <Link
               href="#"
-              className="flex items-center gap-2 rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground"
+              className="flex items-center gap-2 hover:bg-[#045CC8] rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground"
               prefetch={false}
             >
               <FileTextIcon className="h-5 w-5" />
@@ -52,7 +53,7 @@ export default function MunicipalHome() {
             </Link>
             <Link
               href="#"
-              className="flex items-center gap-2 rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground"
+              className="flex items-center gap-2 hover:bg-[#045CC8] rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground"
               prefetch={false}
             >
               <SettingsIcon className="h-5 w-5" />
@@ -60,56 +61,9 @@ export default function MunicipalHome() {
             </Link>
           </nav>
         </aside>
-        <main className="flex-1 p-4 sm:p-6">
+        <main className="flex-1 p-4 sm:p-6 bg-[#045CC8] text-white">
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <Card>
-              <CardHeader>
-                <CardTitle>Total Assets</CardTitle>
-                <CardDescription>The total number of assets managed by the Municipal Corporation.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="text-4xl font-bold">1,234</div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Assets by Category</CardTitle>
-                <CardDescription>The breakdown of assets by category.</CardDescription>
-              </CardHeader>
-              <CardContent>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Recent Activity</CardTitle>
-                <CardDescription>The latest updates and changes to the asset management system.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <div className="font-medium">New Asset Added</div>
-                      <div className="text-xs text-muted-foreground">Street Light - Sector 12</div>
-                    </div>
-                    <div className="text-xs text-muted-foreground">2 hours ago</div>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <div className="font-medium">Asset Maintenance</div>
-                      <div className="text-xs text-muted-foreground">Water Pump - Park Avenue</div>
-                    </div>
-                    <div className="text-xs text-muted-foreground">1 day ago</div>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <div className="font-medium">Asset Retired</div>
-                      <div className="text-xs text-muted-foreground">Street Light - Sector 10</div>
-                    </div>
-                    <div className="text-xs text-muted-foreground">3 days ago</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            
           </div>
           <Card className="mt-4">
             <CardHeader>
@@ -121,48 +75,69 @@ export default function MunicipalHome() {
             <CardContent>
               <Table>
                 <TableHeader>
-                  <TableRow>
+                  <TableRow className="bg-[#001D4A]">
                     <TableHead>Asset Name</TableHead>
                     <TableHead>Category</TableHead>
                     <TableHead>Location</TableHead>
                     <TableHead>Condition</TableHead>
+                    <TableHead>Assigned Personnel</TableHead>
+                    <TableHead>Contact No</TableHead>
                     <TableHead>Last Maintenance</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  <TableRow>
-                    <TableCell>Street Light - Sector 12</TableCell>
+                <TableRow className="hover:bg-[#001D4A]">
+                    <TableCell>Fire Truck</TableCell>
+                    <TableCell>Vehicle</TableCell>
+                    <TableCell>Malharganj</TableCell>
+                    <TableCell>Idle</TableCell>
+                    <TableHead>Shyam Ji</TableHead>
+                    <TableHead>+91 9875642891</TableHead>
+                    <TableCell>15 days ago</TableCell>
+                  </TableRow>
+                  <TableRow className="hover:bg-[#001D4A]">
+                    <TableCell>Street Light - Palhar Nagar</TableCell>
                     <TableCell>Infrastructure</TableCell>
-                    <TableCell>Sector 12, Main Road</TableCell>
-                    <TableCell>Good</TableCell>
+                    <TableCell>Palhar Nagar, Main Road</TableCell>
+                    <TableCell>Not working</TableCell>
+                    <TableCell>Ramlal Kumawat</TableCell>
+                    <TableCell>+91 7584970591</TableCell>
                     <TableCell>2 months ago</TableCell>
                   </TableRow>
-                  <TableRow>
-                    <TableCell>Water Pump - Park Avenue</TableCell>
+                  <TableRow className="hover:bg-[#001D4A]">
+                    <TableCell>Water Pump - Bhanwarkua</TableCell>
                     <TableCell>Utilities</TableCell>
-                    <TableCell>Park Avenue, Residential Area</TableCell>
-                    <TableCell>Fair</TableCell>
+                    <TableCell>Bhawarkua, Residential Area</TableCell>
+                    <TableCell>Repaired</TableCell>
+                    <TableCell>Harish Joshi</TableCell>
+                    <TableCell>+91 6278195350</TableCell>
                     <TableCell>1 week ago</TableCell>
                   </TableRow>
-                  <TableRow>
-                    <TableCell>Street Light - Sector 10</TableCell>
+                  <TableRow className="hover:bg-[#001D4A]">
+                    <TableCell>Street Light - Sarwate Bus Stand</TableCell>
                     <TableCell>Infrastructure</TableCell>
-                    <TableCell>Sector 10, Main Road</TableCell>
-                    <TableCell>Poor</TableCell>
+                    <TableCell>Sarwate Bus Stand</TableCell>
+                    <TableCell>Not Working</TableCell>
+                    <TableCell>Harish Joshi</TableCell>
+                    <TableCell>+91 6278195350</TableCell>
                     <TableCell>6 months ago</TableCell>
                   </TableRow>
-                  <TableRow>
+                  <TableRow className="hover:bg-[#001D4A]">
                     <TableCell>Park Bench - Central Park</TableCell>
                     <TableCell>Amenities</TableCell>
                     <TableCell>Central Park, Main Area</TableCell>
                     <TableCell>Good</TableCell>
+                    <TableCell>Harish Joshi</TableCell>
+                    <TableCell>+91 6278195350</TableCell>
                     <TableCell>1 month ago</TableCell>
                   </TableRow>
-                  <TableRow>
-                    <TableCell>Water Tank - Sector 15</TableCell>
+                  <TableRow className="hover:bg-[#001D4A]">
+                    <TableCell>Water Tank - Ward No. 61</TableCell>
                     <TableCell>Utilities</TableCell>
-                    <TableCell>Sector 15, Residential Area</TableCell>
+                    <TableCell>Ward No.61 , Residential Area</TableCell>
                     <TableCell>Good</TableCell>
+                    <TableCell>Harish Joshi</TableCell>
+                    <TableCell>+91 6278195350</TableCell>
                     <TableCell>2 weeks ago</TableCell>
                   </TableRow>
                 </TableBody>
