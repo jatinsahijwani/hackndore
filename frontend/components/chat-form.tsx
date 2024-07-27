@@ -125,13 +125,13 @@ export function ChatForm() {
 
   return (
     <div className="flex flex-col h-screen">
-  <header className="bg-primary sticky text-primary-foreground py-4 px-6 flex items-center justify-between">
+  <header className="bg-primary sticky text-primary-foreground bg-blue-900 text-white py-4 px-6 flex items-center justify-between">
     <Link href="#" className="flex items-center gap-2" prefetch={false}>
       {/* Assuming MessageCircleIcon is imported */}
-      <span className="text-xl font-bold">Complaint Box</span>
+      <span className="text-xl font-bold">Helpline ChatBot</span>
     </Link>
   </header>
-  <div className="flex-1 flex flex-col">
+  <div className="flex-1 flex flex-col ">
     <ScrollArea ref={scrollAreaRef} className="flex-1 space-y-4 overflow-y-auto">
       {chats.map((chat) => (
         <div key={chat.id} className={`flex items-start my-2 gap-2 ${chat.sender === 'User' ? 'justify-end' : ''}`}>
@@ -147,9 +147,9 @@ export function ChatForm() {
         </div>
       ))}
     </ScrollArea>
-    <div className="bg-muted sticky bottom-0 border-t p-4 flex items-center gap-2">
+    <div className="bg-muted sticky bottom-0 border-t p-4 flex items-center gap-2 bg-gray-300">
       <Input value={message} onChange={(e) => setMessage(e.target.value)} type="text" placeholder="Type your message..." className="flex-1" />
-      <Button onClick={handleClick}>
+      <Button onClick={handleClick} className='bg-blue-500 text-white hover:bg-blue-800'>
         <SendIcon className="w-5 h-5 mr-2" />
         Send
       </Button>
