@@ -53,7 +53,7 @@ export default function Profile() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <h3 className="text-xl font-semibold">Specialties</h3>
-                  <p className="mt-2">Expertise in electrical work, plumbing, and concrete repair.</p>
+                  <p className="mt-2">Expertise in cleaning.</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">Work History</h3>
