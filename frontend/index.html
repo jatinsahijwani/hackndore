@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <style>#map {
+    width: 100vw;
+    height: 100vh;
+    background: grey;
+    position: absolute;
+    z-index: 0;
+}
+
+#panel {
+    width: 100%;
+    height: 400px;
+}
+
+#alert-warning {
+border-style: none;
+border-left-style: solid;
+border-left-width: thick;
+border-color: #f44336;
+background-color: #f4c3c6;
+padding-left: 4px;
+border-radius: 15px;
+padding: 20px;
+color: black;
+}
+#alert {
+margin-left: 15px;
+color: black;
+font-weight: bold;
+float: right;
+font-size: 22px;
+line-height: 20px;
+cursor: pointer;
+transition: 0.3s;
+}
+#alert:hover {
+color: white;
+}
+
+.green
+{
+  width: 5vh;
+  height: 5vh;
+  position: absolute;
+  z-index: 100;
+  top: 100px;
+  left: 100px;
+}
+
+.red{
+  width: 5vh;
+  height: 5vh;
+}
+
+</style>
+    <title>Map at a specified location</title>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="../template.css" />
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+  </head>
+  <body id="markers-on-the-map">
+    <div class="page-header">
+        <div id="alert-warning" style="display:none;">
+  <span id="alert" onclick="this.parentElement.style.display='none';">&times;</span>
+  <strong>Warning!</strong><br>Please paste your apiKey in the Javascript code.
+</div>
+    </div>
+    <div id="map"></div>
+    <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtaWNvbjItYWtlMDQ3NC1qai1sLmpwZw.jpg"  class="green" />
+    <img src="https://img.lovepik.com/element/40170/4840.png_1200.png" class="red" />
+    <script type="text/javascript" src='demo.js'></script>
+  </body>
+  <script>
+function moveMapToBerlin(map){
+  map.setCenter({lat:22.7196, lng:75.8577});
+  map.setZoom(14);
+}
+window.apiKey = "ao1bLXd3kkcban2ye-jIAAwJR7gvNMbedBI5fy-ootY"; 
+var alertWarningUi = document.getElementById('alert-warning');
+if(!apiKey){
+  alertWarningUi.style.display= 'block';
+} else{
+  alertWarningUi.style.display = 'none';
+}
+var platform = new H.service.Platform({
+  apikey: window.apiKey
+});
+var defaultLayers = platform.createDefaultLayers();
+var map = new H.Map(document.getElementById('map'),
+  defaultLayers.vector.normal.map,{
+  center: {lat:50, lng:5},
+  zoom: 100,
+  pixelRatio: window.devicePixelRatio || 1
+});
+window.addEventListener('resize', () => map.getViewPort().resize());
+var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+var ui = H.ui.UI.createDefault(map, defaultLayers);
+window.onload = function () {
+  moveMapToBerlin(map);
+}
+</script>
+</html>
