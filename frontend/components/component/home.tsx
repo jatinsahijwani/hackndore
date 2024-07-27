@@ -44,7 +44,7 @@ export default function Home() {
               className="inline-flex h-9 items-center justify-center rounded-md bg-white text-black px-4 py-2 text-sm font-medium shadow transition-colors hover:bg-opacity-75 hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white focus-visible:ring-opacity-50 disabled:pointer-events-none disabled:opacity-50"
               prefetch={false}
             >
-              View Campaigns
+             Departments
             </Link>
           </nav>
         </div>

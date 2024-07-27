@@ -34,7 +34,7 @@ const RecordPage = () => {
         <video ref={videoRef} autoPlay muted className="w-full overflow-hidden scale-[400%] max-w-xs"></video>
             <Button onClick={() => {
                 handleClick()
-            }} className='p-5 absolute z-10 mt-96 mr-16'>{isRecording}</Button>
+            }} className='p-5 absolute z-10 mt-96 mr-16 border-2 border-black bg-blue-600 text-white'>{isRecording}</Button>
         )
     </div>
     );

@@ -49,7 +49,7 @@ export default function Campaign() {
               prefetch={false}
             >
               <ListIcon className="h-5 w-5" />
-              View Campaigns
+              Departments
             </Link>
           </nav>
         </aside>
