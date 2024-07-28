@@ -24,10 +24,17 @@ const initialChats = [
   },
 ];
 
+// Inside your component file or a separate .d.ts file
+export type LocationState = {
+  latitude?: number;
+  longitude?: number;
+};
+
+
 export function ChatForm() {
   const scrollAreaRef = useRef<HTMLDivElement | null>(null);
   const [chats, setChats] = useState(initialChats);
-  const [location, setLocation] = useState(null);
+  const [location, setLocation] = useState<LocationState | null>(null);
   const [error, setError] = useState('');
   const [point,setPoint] = useState(0);
   const [message,setMessage] = useState('');
