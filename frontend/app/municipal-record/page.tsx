@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 
 const RecordPage = () => {
     const router = useRouter();
-    const videoRef = useRef(null);
+    const videoRef = useRef<HTMLVideoElement | null>(null);
     const [isRecording, setIsRecording] = useState('Start Recording');
     const handleClick = () => {
         setIsRecording("Recording");
