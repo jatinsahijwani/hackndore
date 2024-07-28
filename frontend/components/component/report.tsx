@@ -86,7 +86,7 @@ export default function Report() {
   );
 }
 
-function CalendarClockIcon(props) {
+function CalendarClockIcon(props: any) {
   return (
     <svg
       {...props}
@@ -110,7 +110,7 @@ function CalendarClockIcon(props) {
   );
 }
 
-function DownloadIcon(props) {
+function DownloadIcon(props: any) {
   return (
     <svg
       {...props}
@@ -131,7 +131,7 @@ function DownloadIcon(props) {
   );
 }
 
-function XIcon(props) {
+function XIcon(props: any) {
   return (
     <svg
       {...props}

@@ -180,7 +180,7 @@ function BuildingIcon(props) {
 }
 
 
-function FileTextIcon(props) {
+function FileTextIcon(props : any) {
   return (
     <svg
       {...props}
@@ -204,7 +204,7 @@ function FileTextIcon(props) {
 }
 
 
-function LayoutGridIcon(props) {
+function LayoutGridIcon(props : any) {
   return (
     <svg
       {...props}
@@ -227,24 +227,9 @@ function LayoutGridIcon(props) {
 }
 
 
-function LinechartChart(props) {
-  return (
-    <div {...props}>
-      <ChartContainer
-        config={{
-          desktop: {
-            label: "Desktop",
-            color: "hsl(var(--chart-1))",
-          },
-        }}
-      >
-      </ChartContainer>
-    </div>
-  )
-}
 
 
-function PackageIcon(props) {
+function PackageIcon(props: any) {
   return (
     <svg
       {...props}
@@ -267,7 +252,7 @@ function PackageIcon(props) {
 }
 
 
-function SettingsIcon(props) {
+function SettingsIcon(props: any) {
   return (
     <svg
       {...props}
@@ -288,7 +273,7 @@ function SettingsIcon(props) {
 }
 
 
-function WrenchIcon(props) {
+function WrenchIcon(props: any) {
   return (
     <svg
       {...props}
@@ -308,7 +293,7 @@ function WrenchIcon(props) {
 }
 
 
-function XIcon(props) {
+function XIcon(props: any) {
   return (
     <svg
       {...props}
@@ -322,7 +307,7 @@ function XIcon(props) {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path d="M18 6 6 18" />
+      <path d="M18 6 6 18w" />
       <path d="m6 6 12 12" />
     </svg>
   )

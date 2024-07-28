@@ -1,5 +1,11 @@
 import React from 'react';
 
+interface ServiceCardProps {
+  icon: React.ReactNode; // Type for the icon prop
+  title: string; // Type for the title prop
+  description: string; // Type for the description prop
+}
+
 export default function Assets() {
   return (
     <main className="w-full h-[100vh] py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-500 to-blue-950">
@@ -49,7 +55,7 @@ export default function Assets() {
   );
 }
 
-function ServiceCard({ icon, title, description }) {
+function ServiceCard({ icon, title, description } : ServiceCardProps) {
   return (
     <div className="flex flex-col items-start gap-4 p-6 bg-white shadow-xl rounded-lg transform transition duration-500 hover:scale-105 cursor-pointer">
       <div className="bg-blue-500 rounded-md p-3 flex items-center justify-center text-white hover:bg-purple-600 transition-colors duration-300">
@@ -65,7 +71,7 @@ function ServiceCard({ icon, title, description }) {
   );
 }
 
-function WrenchIcon(props) {
+function WrenchIcon(props: any) {
   return (
     <svg
       {...props}
@@ -84,7 +90,7 @@ function WrenchIcon(props) {
   );
 }
 
-function LeafIcon(props) {
+function LeafIcon(props: any) {
   return (
     <svg
       {...props}
@@ -104,7 +110,7 @@ function LeafIcon(props) {
   );
 }
 
-function BoltIcon(props) {
+function BoltIcon(props: any) {
   return (
     <svg
       {...props}
@@ -124,7 +130,7 @@ function BoltIcon(props) {
   );
 }
 
-function PencilIcon(props) {
+function PencilIcon(props: any) {
   return (
     <svg
       {...props}
@@ -144,7 +150,7 @@ function PencilIcon(props) {
   );
 }
 
-function ShieldIcon(props) {
+function ShieldIcon(props: any) {
   return (
     <svg
       {...props}
@@ -163,7 +169,7 @@ function ShieldIcon(props) {
   );
 }
 
-function BriefcaseIcon(props) {
+function BriefcaseIcon(props: any) {
   return (
     <svg
       {...props}

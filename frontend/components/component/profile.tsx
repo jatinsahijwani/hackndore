@@ -68,7 +68,7 @@ export default function Profile() {
   );
 }
 
-function StarIcon(props) {
+function StarIcon(props: any) {
   return (
     <svg
       {...props}

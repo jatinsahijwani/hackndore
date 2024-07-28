@@ -25,7 +25,7 @@ const initialChats = [
 ];
 
 export function ChatForm() {
-  const scrollAreaRef = useRef(null);
+  const scrollAreaRef = useRef<HTMLDivElement | null>(null);
   const [chats, setChats] = useState(initialChats);
   const [location, setLocation] = useState(null);
   const [error, setError] = useState('');
@@ -160,7 +160,7 @@ export function ChatForm() {
 }
 
 
-function MessageCircleIcon(props) {
+function MessageCircleIcon(props: any) {
   return (
     <svg
       {...props}
@@ -180,7 +180,7 @@ function MessageCircleIcon(props) {
 }
 
 
-function MoveHorizontalIcon(props) {
+function MoveHorizontalIcon(props: any) {
   return (
     <svg
       {...props}
@@ -202,7 +202,7 @@ function MoveHorizontalIcon(props) {
 }
 
 
-function PaperclipIcon(props) {
+function PaperclipIcon(props: any) {
   return (
     <svg
       {...props}
@@ -222,7 +222,7 @@ function PaperclipIcon(props) {
 }
 
 
-function PhoneIcon(props) {
+function PhoneIcon(props: any) {
   return (
     <svg
       {...props}
@@ -242,7 +242,7 @@ function PhoneIcon(props) {
 }
 
 
-function SendIcon(props) {
+function SendIcon(props: any) {
   return (
     <svg
       {...props}
@@ -263,7 +263,7 @@ function SendIcon(props) {
 }
 
 
-function SmileIcon(props) {
+function SmileIcon(props: any) {
   return (
     <svg
       {...props}
@@ -286,7 +286,7 @@ function SmileIcon(props) {
 }
 
 
-function VideoIcon(props) {
+function VideoIcon(props: any) {
   return (
     <svg
       {...props}
@@ -307,7 +307,7 @@ function VideoIcon(props) {
 }
 
 
-function XIcon(props) {
+function XIcon(props: any) {
   return (
     <svg
       {...props}

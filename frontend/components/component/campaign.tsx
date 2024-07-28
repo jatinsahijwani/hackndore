@@ -193,7 +193,7 @@ export default function Campaign() {
   )
 }
 
-function ListIcon(props) {
+function ListIcon(props: any) {
   return (
     <svg
       {...props}
@@ -218,7 +218,7 @@ function ListIcon(props) {
 }
 
 
-function XIcon(props) {
+function XIcon(props: any) {
   return (
     <svg
       {...props}
