@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Assets() {
   return (
-    <main className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-500 to-blue-950">
+    <main className="w-full h-[100vh] py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-500 to-blue-950">
       <div className="container mx-auto px-4 sm:px-6 md:px-8">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter text-white">

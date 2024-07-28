@@ -32,7 +32,7 @@ export default function Report() {
             <CardDescription>For the selected period</CardDescription>
           </CardHeader>
           <CardContent className="p-4">
-            <div className="text-4xl font-bold text-gray-800">$2,456,789</div>
+            <div className="text-4xl font-bold text-gray-800"> ₹2,456,789</div>
           </CardContent>
         </Card>
         <Card className="shadow-lg bg-white rounded-lg overflow-hidden">
@@ -41,16 +41,16 @@ export default function Report() {
             <CardDescription>For the selected period</CardDescription>
           </CardHeader>
           <CardContent className="p-4">
-            <div className="text-4xl font-bold text-gray-800">$1,456,789</div>
+            <div className="text-4xl font-bold text-gray-800"> ₹1,456,789</div>
           </CardContent>
         </Card>
         <Card className="shadow-lg bg-white rounded-lg overflow-hidden">
           <CardHeader className="bg-gray-100 p-4">
-            <CardTitle>Net Profit</CardTitle>
+            <CardTitle>Total Collection</CardTitle>
             <CardDescription>For the selected period</CardDescription>
           </CardHeader>
           <CardContent className="p-4">
-            <div className="text-4xl font-bold text-gray-800">$2,456,789</div>
+            <div className="text-4xl font-bold text-gray-800"> ₹2,456,789</div>
           </CardContent>
         </Card>
         <Card className="shadow-lg bg-white rounded-lg overflow-hidden">
@@ -59,7 +59,7 @@ export default function Report() {
             <CardDescription>For the selected period</CardDescription>
           </CardHeader>
           <CardContent className="p-4">
-            <div className="text-4xl font-bold text-gray-800">$2,456,789</div>
+            <div className="text-4xl font-bold text-gray-800"> ₹2,456,789</div>
           </CardContent>
         </Card>
         <Card className="shadow-lg bg-white rounded-lg overflow-hidden">
@@ -68,7 +68,7 @@ export default function Report() {
             <CardDescription>For the selected period</CardDescription>
           </CardHeader>
           <CardContent className="p-4">
-            <div className="text-4xl font-bold text-gray-800">$2,456,789</div>
+            <div className="text-4xl font-bold text-gray-800"> ₹2,456,789</div>
           </CardContent>
         </Card>
         <Card className="shadow-lg bg-white rounded-lg overflow-hidden">

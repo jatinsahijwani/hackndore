@@ -28,7 +28,7 @@ export default function MunicipalHome() {
               Dashboard
             </Link>
             <Link
-              href="#"
+              href="/assets"
               className="flex items-center hover:bg-[#045CC8] gap-2 rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground"
               prefetch={false}
             >
@@ -44,7 +44,7 @@ export default function MunicipalHome() {
               Maintenance
             </Link>
             <Link
-              href="#"
+              href="/report"
               className="flex items-center gap-2 hover:bg-[#045CC8] rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground"
               prefetch={false}
             >
@@ -100,7 +100,7 @@ export default function MunicipalHome() {
                     <TableCell>Infrastructure</TableCell>
                     <TableCell>Palhar Nagar, Main Road</TableCell>
                     <TableCell>Not working</TableCell>
-                    <TableCell>Ramlal Kumawat</TableCell>
+                    <TableCell className=" underline"><Link href={'/profile'}>Ramlal Kumawat</Link></TableCell>
                     <TableCell>+91 7584970591</TableCell>
                     <TableCell>2 months ago</TableCell>
                   </TableRow>

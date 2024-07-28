@@ -8,7 +8,7 @@ export default function Profile() {
       <div className="max-w-4xl w-full bg-white shadow-xl rounded-lg overflow-hidden m-10">
         <div className="md:flex">
           <div className="md:w-1/2 bg-blue-500 text-white p-10 space-y-6 ">
-            <h2 className="text-3xl font-bold">Ramesh Malviya</h2>
+            <h2 className="text-3xl font-bold">Ramlal Kumawat</h2>
             <p className="text-lg">Sanitation Worker</p>
             <p>+91 7591682795</p>
             <Separator className="border-t border-gray-300 my-6" />
