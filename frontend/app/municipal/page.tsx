@@ -150,7 +150,7 @@ export default function MunicipalHome() {
   )
 }
 
-function BuildingIcon(props) {
+function BuildingIcon(props: any) {
   return (
     <svg
       {...props}
