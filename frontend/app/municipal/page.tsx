@@ -69,7 +69,7 @@ export default function MunicipalHome() {
             <CardHeader>
               <CardTitle>Asset Management</CardTitle>
               <CardDescription>
-                View and manage the assets under the Municipal Corporation's responsibility.
+                View and manage the assets under the Municipal Corporation responsibility.
               </CardDescription>
             </CardHeader>
             <CardContent>
