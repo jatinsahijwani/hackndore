@@ -57,7 +57,7 @@ export default function Campaign() {
                 <CardHeader>
                   <CardTitle>Bike Share Program</CardTitle>
                   <CardDescription>
-                    Campaign to expand the city's bike share program with more stations.
+                    Campaign to expand the city bikes share program with more stations.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -150,7 +150,7 @@ export default function Campaign() {
               <Card className="bg-gray-300">
                 <CardHeader>
                   <CardTitle>Public Transit Expansion</CardTitle>
-                  <CardDescription>Campaign to expand the city's public transportation network.</CardDescription>
+                  <CardDescription>Campaign to expand the city public transportation network.</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center justify-between">
